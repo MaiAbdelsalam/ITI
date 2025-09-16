@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/awareness-campaign.png">
+    <title>Campria </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login_reg.css">
+    <script>
+        if(!localStorage.getItem('userInfo')){
+         console.log(localStorage.getItem('userInfo'));
+         window.location.href = 'login.html';
+       }
+       </script>
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"> <img src="assets/awareness-campaign.png" alt="logo"> </a>
+            <form action="" class="search">
+                <input type="search" placeholder="search for campaigns">
+                <button type="submit">Search</button>
+            </form>
+            <div class="header_icons">
+                <div class="icon">
+                    <a href="">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="count count_favourites">0</span>
+                    </a>
+                </div>
+                <div class="icon" >
+                    <a href="mycampagins.html" id="campaigns-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+                <div class="fas fa-bars" id="nav-toggle">
+                </div>
+                <ul id="list">                    <li class="active"><a href="index.html" >home</a></li>
+                    <li><a href="allcampagins.html">all campaigns</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="login-signup">
+                    <img src="assets/user.png"  alt="" id="image-profile">
+                    <p href="profile.html" id="user"></p>
+                    <a href="login.html" id="loginBtn" >login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html" id="signinBtn">sign up <i class="fa-solid fa-user-plus"></i></i></a>
+                    <a href="#" id="signOut">sign out <i class="fas fa-sign-out"></i></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="signin sec-form">
+        <div class="form-container">
+            <p class="title">Welcome Back</p>
+            <form action="" class="form">
+                <div class="image-container">
+                    <div class="form-image">
+                        <input type="file" hidden >
+                        <img src="assets/user.png"  alt="">
+                    </div>
+                    <p>choose campaign Image</p>
+                </div>
+                <!-- <input type="text" placeholder="Enter Campaign title" class="title"> -->
+                <input type="text" placeholder="Enter Your title" class="camptitle">
+                <input type="number" placeholder="Enter Your Goal" class="goal">
+                <input type="date" placeholder="Enter Your deadline" class="deadline"> 
+                <input type="text" placeholder="Enter reward title" class="rewardtitle">
+                <input type="number" placeholder="Enter Your amount" class="rewardamount"> 
+                <p class="alert-label" style="color:red"></p>
+                <select name="" id="catgories">
+                    <option value="" disabled selected="true" >select Category</option>
+                </select>
+                <button class="form-btn" id="createCampaign">create campaign</button>   
+            </form>
+ 
+   
+
+        </div>
+    </section>
+    <a href="createcampagin.html" class="create-campagin-icon" id="create"><i class="fa fa-plus"></i></a>
+
+    <script src="js/script.js"></script>
+    <script src="js/createcampagin.js"></script>
+</body>
+</html>

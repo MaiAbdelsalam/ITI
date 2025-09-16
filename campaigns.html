@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- css file link -->
+    <link rel="icon" href="assets/awareness-campaign.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="css/admin.css">
+     <script>
+             if(!localStorage.getItem('userInfo')){
+         console.log(localStorage.getItem('userInfo'));
+         window.location.href = 'login.html';
+       }
+       else if(localStorage.getItem('userInfo')){
+         let userLogin=JSON.parse(localStorage.userInfo);
+        if(userLogin.role=='user'){
+            console.log(userLogin.role)
+            window.location.href = 'login.html';
+        }
+       }
+     </script>
+     <style>
+        .recent-grid{
+            display: block;
+        }
+     </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <h1 class="logo"><img src="assets/awareness-campaign.png">Campria</h1>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="admin.html"  class="active">
+                            <span><i class="fas fa-home"></i></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="users.html">
+                            <span><i class="fas fa-users"></i></span>
+                            <span>Users</span>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="campaigns.html">
+                            <span><i class="fas fa-bullhorn"></i></span>
+                            <span>Campaigns</span> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pledges.html">
+                            <span><i class="fas fa-donate"></i></span>
+                            <span>Pledges</span>     
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="" id="signOut">
+                            <span><i class="fas fa-sign-out"></i></span>
+                            <span>signOut</span>     
+                        </a>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    
+        <div class="main-content">
+            <header>
+                <h2 class="header-title">
+                    <span id="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                    <span>   Dashboard
+                    </span>
+                </h2>
+                <div class="search-wrapper">
+                    <span class="fas fa-search"></span>
+                    <input type="search" id="search" placeholder="Search Here">
+                </div>
+    
+                <div class="user-wrapper">
+                    <img src="assets/awareness-campaign.png" width="40px" height="40px" alt="">
+                    <div>
+                        <h4>John Doe</h4>
+                        <small>Super Admin</small>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="dashboard-cart">
+                    
+                </div>
+                <div class="recent-grid">
+                    <div class="campaigns">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Recent Campaigns</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table >
+                                        <thead>
+                                            <tr>
+                                                <td>Campaign Image</td>
+                                                <td>Campaign Title</td>
+                                                <td>Status</td>
+                                                <td>Rewards</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Image</td>
+                                                <td>Title</td>
+                                                <td>
+                                                    <span class="status blue"></span>
+                                                    <span>Approved</span>
+                                                </td>
+                                                <td><select name="" id="reward"></select></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Image</td>
+                                                <td>Title</td>
+                                                <td>
+                                                    <span class="status purple"></span>
+                                                    <span>Not Approved</span>
+                                                </td>
+                                                <td><select name="" id="reward"></select></td>
+            
+                                            </tr>
+                                        </tbody>
+                                    </table>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </main>
+        </div>
+        
+    </div>
+    <div id="pagination" style="display: flex;">
+        <p id="pageNumbers"></p>
+
+        <ul>
+            <li class="btn prev"><span><i class="fa-solid fa-angle-left"></i> Prev</span></li>
+            <li class="numb page-link active" data-page="1">1<span></span></li>
+            <!--<li class="dots"><span>...</span></li>
+            <li class="numb"><span>5</span></li>
+            <li class="dots"><span>...</span></li>
+            <li class="numb"><span>7</span></li> -->
+            <li class="btn next"><span>Next <i class="fa-solid fa-angle-right"></i> </span></li>
+        </ul>
+    </div>
+    <script src="js/mainadmin.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/campaignPagination.js"></script>
+</body>
+</html>

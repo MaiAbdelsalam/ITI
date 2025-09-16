@@ -1,0 +1,71 @@
+section{
+    flex: 1 1 35rem;
+}
+.contact_form , .input-info, .pledge .container , .input-info , .address{
+    width: 100% !important;
+}
+
+input {
+    width: 100%;
+}
+.contact_form{
+    flex: 1 1 35rem;
+
+}
+.pledge .input-info h2{
+    padding: 10px 20px;
+    background: var(--main-color);
+    text-transform: capitalize;
+}
+.pledge .input-info .address{
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow:8px 8px 10px #c0bfbf44 ;   
+}
+
+.pledge .input-info .login-signup {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.pledge .input-info .login-signup button{
+    width:50%;
+    color: var(--white-color);
+    font-size: 18px;
+    margin: auto;
+}
+.input-info textarea{
+    width: 100%;
+    padding: 1rem;
+    color: var(--dark-color);
+}
+.input-info .login-signup button:hover{
+    width:50%;
+    color: var(--main-color);
+    font-size: 18px;
+}
+ .input-info .inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+}
+
+.input-info .inputs label{
+    color: var(--dark-color);
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.input-info .inputs input,
+.input-info textarea{
+    margin: 8px 0;
+    padding: 15px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.input-info .inputs input:focus,textarea:focus{
+    border: 1px solid var(--main-color);
+
+}

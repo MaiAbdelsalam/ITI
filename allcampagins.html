@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/awareness-campaign.png">
+    <title>Campria </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/all campaigns.css">
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"> <img src="assets/awareness-campaign.png" alt="logo"> </a>
+            <form action="" class="search">
+                <input type="search" id="search" placeholder="search for campaigns">
+                <button type="button"  >Search</button>
+            </form>
+            <div class="header_icons">
+                <div class="icon">
+                    <a href="">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="count count_favourites">0</span>
+                    </a>
+                </div>
+                <div class="icon" >
+                    <a href="mycampagins.html" id="campaigns-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </a>
+                </div>  
+            </div>
+        </div>
+       <div class="bottom_header">
+        <div class="conatiner">
+            <nav>
+                <div class="links container">
+                    <div class="fas fa-bars" id="nav-toggle">
+                    </div>
+                <ul class="nav_links" id="list">
+                        <li ><a href="index.html" >home</a></li>
+                        <li class="active"><a href="allcampagins.html">all campaigns</a></li>
+                        <li><a href="aboutus.html">about us</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                    <div class="login-signup">
+                        <img src="assets/user.png"  alt="" id="image-profile">
+                        <p href="profile.html" id="user"></p>
+                        <a href="login.html" id="loginBtn" >login <i class="fa-solid fa-right-to-bracket"></i></a>
+                        <a href="signup.html" id="signinBtn">sign up <i class="fa-solid fa-user-plus"></i></i></a>
+                        <a href="#" id="signOut">sign out <i class="fas fa-sign-out"></i></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+       </div>
+    </header>
+    <div class="container">
+        <div class="sort">
+            <div class="category_div">
+                <div class="category_nav">
+                    <div class="category_btn">
+                        <i class="fas fa-bars"></i>
+                        <p>Browse Category</p>
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                    <div class="category_nav_list">
+                      <a href="#">All Categories</a>
+                    </div>
+                </div>
+            </div>  
+            <input type="date">
+        </div>
+   
+       
+
+    </div>
+    
+    <!-- <div class="cart">
+        <div class="top_cart">
+            <h3>My Campaigns <span>(0 campaigns)</span></h3>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="items_in_cart">
+
+        </div>
+        <div class="bottom_cart">
+            
+        </div>
+    </div> -->
+    <a href="createcampagin.html" class="create-campagin-icon" id="create"><i class="fa fa-plus"></i></a>
+    <!-- <section class="blogs" id="blogs">
+        <div class="heading">
+            <span>our Campaigns</span>
+            <h3>browse for campaigns</h3>
+        </div>
+        
+
+        <div class="container campaigns_container">
+           
+            <div class="box">
+                <div class="update">
+                    <p><i class="fas fa-calendar"></i> 21st septemper, 2022</p>
+                </div>
+                <div class="image">
+                    <img src="pngimages/pexels-valeria-boltneva-11480871.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food / </a>
+                        <a href="#"><i class="fas fa-tag"></i>burger / </a>
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+                    
+                    <h3>blogs title goes here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, obcaecati?</p>
+                    <div class="login-signup">                     
+                        <a href="campaigmDetail.html" class="">read more</a>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
+    <div class="slider-products ">
+        <div class="container">
+
+            <div class="slide-campaign ">
+                <div class="top-slide">
+                    <h2><i class="fa-solid fa-tags"></i>Browse Campaigns</h2>
+                </div>
+                <div class="campaigns" id="swiper-item-sale">
+                    
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+        
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div id="pagination" style="display: flex;">
+                <p id="pageNumbers"></p>
+        
+                <ul>
+                    <li class="btn prev"><span><i class="fa-solid fa-angle-left"></i> Prev</span></li>
+                    <li class="numb page-link active" data-page="1">1<span></span></li>
+                    <!--<li class="dots"><span>...</span></li>
+                    <li class="numb"><span>5</span></li>
+                    <li class="dots"><span>...</span></li>
+                    <li class="numb"><span>7</span></li> -->
+                    <li class="btn next"><span>Next <i class="fa-solid fa-angle-right"></i> </span></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="big-row">
+                <img class="logo-footer" src="assets/awareness-campaign.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fuga, accusamus eum illum nostrum, cupiditate ad quae dolor modi recusandae aperiam error impedit dolores totam. Rem sit obcaecati quibusdam recusandae?</p>
+                <div class="icons-footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Find It Fast</h4>
+                <div class="links">
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Education</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Health</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Arts</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Films</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Education</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Qucik Links</h4>
+                <div class="links">
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Your Account</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> About Us</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Contact Us</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Campigans</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Pledges</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Service Us</h4>
+                <div class="links">
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Support center</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Terms & condition</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer">
+        <div class="conatiner">
+            <p> &#xA9; Created By <span> Eng. Mai Abdelsalam </span>| All Right Reserved</p>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+    <script src="js/allcampagins.js"></script>
+</body>
+</html>

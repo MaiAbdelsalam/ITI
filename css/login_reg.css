@@ -1,0 +1,138 @@
+
+:root{
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #d01418;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+}
+.alert-label{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    height: 25px;
+}
+html{
+    height: 100%;
+}
+.fa-xmark,
+.fa-circle-xmark{
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+    color: var(--dark-color);
+}
+body{
+    height: 100%;
+}
+.sec-form{
+    padding-top: 2rem;
+    margin: auto !important;
+    text-align: center;
+
+}
+.form-container{
+    margin: auto;
+    /* text-align: center; */
+    width: 50%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+.form-container .title{
+    text-align: center;
+    color: var(--dark-color);
+    margin: 10px 0 30px;
+    font-size: 28px;
+    font-weight: 800;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+.form input{
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    padding: 12px 15px;
+}
+.form input:focus{
+    border-color: var(--main-color);
+}
+.page-link{
+    margin: 0;
+    text-align: end;
+}
+.page-link .page-link-label{
+    color:  var(--parg-color);
+    font-size: 12px;
+}
+.page-link .page-link-label:hover{
+    color: #000;
+}
+.form-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, .25) 0px 3px 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sign-up-label{
+    margin: 0;
+    font-size: 12px;
+    color: var(--parg-color);
+}
+.sign-up-label .sign-up-link{
+    margin-left:2px ;
+    font-size: 14px;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.alert-label{
+    display: none;
+    margin-bottom: 5px;
+    height: auto !important;
+}
+.image-container{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+}
+.form-image{
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    border:#777 dashed .1rem ;
+    border-radius: .5rem ;
+}
+.form-image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem ;
+}
+
+.image-container p{
+    color: red;
+    font-size: 1.5rem;
+    padding:0 .5rem;
+}
+.image-container p{
+    color: red;
+    font-size: 1rem;
+    padding:0 .5rem;
+}
+
+@media (max-width:500px){
+    .form-container{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}

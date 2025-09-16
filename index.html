@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/awareness-campaign.png">
+    <title>Campria </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo"> <img src="assets/awareness-campaign.png" alt="logo"> </a>
+            <form action="" class="search">
+                <input type="search" placeholder="search for campaigns">
+                <button type="submit">Search</button>
+            </form>
+            <div class="header_icons">
+               
+                <div class="icon">
+                    <a href="pledge.html">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="count count_favourites">0</span>
+                    </a>
+                </div>
+                <div class="icon" >
+                    <a href="mycampagins.html" id="campaigns-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="count count_item_header">0</span>
+                    </a>
+                </div>  
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+                <div class="fas fa-bars" id="nav-toggle">
+                </div>
+                <ul id="list">
+                    <li class="active"><a href="index.html" >home</a></li>
+                    <li><a href="allcampagins.html">all campaigns</a></li>
+                    <li><a href="aboutus.html">about us</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="login-signup">
+                    <img src="assets/user.png"  alt="" id="image-profile">
+                    <p href="profile.html" id="user"></p>
+                    <a href="login.html" id="loginBtn" >login <i class="fa-solid fa-right-to-bracket"></i></a>
+                    <a href="signup.html" id="signinBtn">sign up <i class="fa-solid fa-user-plus"></i></i></a>
+                    <a href="#" id="signOut">sign out <i class="fas fa-sign-out"></i></i></a>
+                </div>
+            </div>
+        </nav>
+     
+
+    </header>
+    <!-- <div class="cart">
+        <div class="top_cart">
+            <h3>My Campaigns <span>(0 campaigns)</span></h3>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="items_in_cart">
+
+        </div>
+        <div class="bottom_cart">
+            
+        </div>
+    </div> -->
+    <section class="home">
+        <div class="container">
+            <div class="fas fa-chevron-left" id="prevbtn" onclick="prev()"></div>
+            <div class="fas fa-chevron-right" id="nextvbtn"  onclick="next()"></div>
+            <div class="sliders">
+
+                <div class="slider-card active">
+                    <div class="image">
+                        <img src="assets/vectors/Marketing-rafiki (1).png" alt="slider1">
+                    </div>
+                    <div class="card-desc">
+                        <h2>Support Meaningful Campaigns</h2>
+                        <p class="">Discover inspiring campaigns and help bring ideas to life by supporting them. </p>
+                        <div class="login-signup">
+                            <a href="allcampagins.html">Discover Now <i class="far fa-dot-circle"></i></a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="image">
+                        <!-- <img src="assets/vectors/Digital lifestyle-rafiki.svg" alt="slider2"> -->
+                        <img src="assets/vectors/Creativity-rafiki.png" alt="slider2">
+                    </div>
+                    <div class="card-desc">
+                        <h2>Make a Difference with <br> Your Contribution</h2>
+                        <p>Your contribution empowers innovators, dreamers, and change-makers to achieve their goals.</p>
+                        <div class="login-signup">
+                            <a href="allcampagins.html">Discover Now <i class="far fa-dot-circle"></i></a>    
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-card">
+                    <div class="image">
+                        <img src="assets/vectors/Add User-rafiki.png" alt="slider3">
+                    </div>
+                    <div class="card-desc">
+                        <h2>Join Us in Creating Change</h2>
+                        <p>Explore projects, back creators, and be part of something greater.</p>
+                        <div class="login-signup">
+                            <a href="allcampagins.html">Discover Now <i class="far fa-dot-circle"></i></a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="banners_4">
+        <div class="container">
+            <div class="box">
+                <a href="" class="link_btn"></a>
+                <img src="assets/banner3_2.png" alt="">
+                <div class="text">
+                    <h5>Break disc</h5>
+                    <h5>deal on this</h5>
+                    <div class="sale">
+                        <p>Up <br>Reward</p>
+                        <span>3</span>
+                    </div>
+                    <h6>browse now</h6>
+                </div>
+            </div>
+            <div class="box">
+                <a href="" class="link_btn"></a>
+                <img src="assets/banner3_4.png" alt="">
+                <div class="text">
+                    <h5>Break disc</h5>
+                    <h5>deal on this</h5>
+                    <div class="sale">
+                        <p>Up <br>Reward</p>
+                        <span>3</span>
+                    </div>
+                    <h6>browse now</h6>
+                </div>
+            </div>
+            <div class="box">
+                <a href="" class="link_btn"></a>
+                <img src="assets/vectors/Going up-rafiki.png" alt="">
+                <div class="text">
+                    <h5>Break disc</h5>
+                    <h5>deal on this</h5>
+                    <div class="sale">
+                        <p>Up <br>Reward</p>
+                        <span>3</span>
+                    </div>
+                    <h6>browse now</h6>
+                </div>
+            </div>
+            <div class="box">
+                <a href="" class="link_btn"></a>
+                <img src="assets/vectors/404 error lost in space-rafiki.png" alt="">
+                <div class="text">
+                    <h5>Break disc</h5>
+                    <h5>deal on this</h5>
+                    <div class="sale">
+                        <p>Up <br>Reward</p>
+                        <span>3</span>
+                    </div>
+                    <h6>browse now</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slider-products slide">
+        <div class="container">
+
+            <div class="slide-campaign mySwiper">
+                <div class="top-slide">
+                    <h2><i class="fa-solid fa-tags"></i>Featured Campaigns</h2>
+                </div>
+                <div class="campaigns swiper-wrapper" id="swiper-item-sale">
+                    
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+        
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide campaign">
+                        
+                        <span class="reward-amount">70</span>
+                        <div class="image-campaign">
+                            <a href=""><img src="assets/pngtree-pastel-colored-texture-background-with-a-blurred-green-and-blue-ambiance-png-image_12351611.png" alt=""></a>
+                        </div>
+                        <p class="name-campaign"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi at facilis similique vero nisi quas repellendus doloremque, ipsum, soluta animi temporibus dolores. Sed blanditiis suscipit iusto explicabo ipsum ipsam dolores!</a></p>
+                        <div class="reward">
+                            <p><span>reward name</span></p>
+                            <p class="amount">reward amount</p>
+                        </div>
+                        <div class="icons">
+                            <span class="read-more">
+                                <i class="fas fa-info-circle"></i>
+                                read more
+                            </span>
+                            <span class="icon-campaign">
+                                <i class="fas fa-donate"></i>
+                            </span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="nextBtn btn_Swip">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="prevBtn  btn_Swip">
+                    <i class="fas fa-chevron-left"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <section class="blogs" id="blogs">
+        <div class="heading" style="text-align:center">
+            <span>our Campaigns</span>
+            <h3>browse for campaigns</h3>
+        </div>
+        
+
+        <div class="container campaigns_container">
+            <div class="box">
+                <div class="update">
+                    <p><i class="fas fa-calendar"></i> 21st septemper, 2022</p>
+                </div>
+                <div class="image">
+                    <img src="pngimages/pexels-geraud-pfeiffer-6605397.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food / </a>
+                        <a href="#"><i class="fas fa-tag"></i>burger / </a>
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+
+                    <h3>blogs title goes here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, obcaecati?</p>
+                    </div>
+
+            </div>
+
+            <div class="box">
+                <div class="update">
+                    <p><i class="fas fa-calendar"></i> 21st septemper, 2022</p>
+                </div>
+                <div class="image">
+                    <img src="pngimages/faizan-saeed-8thte7ceLSw-unsplash.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"> <i class="fas fa-tag"> </i> food / </a>
+                        <a href="#"> <i class="fas fa-tag"> </i> burger / </a>
+                        <a href="#"> <i class="fas fa-tag"> </i> pizza</a>
+                    </div>
+                    
+                    <h3>blogs title goes here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, obcaecati?</p>
+                    <a href="order now" class="btn">read more</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="update">
+                    <p><i class="fas fa-calendar"></i> 21st septemper, 2022</p>
+                </div>
+                <div class="image">
+                    <img src="pngimages/pancakes-1984716_1920.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food / </a>
+                        <a href="#"><i class="fas fa-tag"></i>burger / </a>
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+                    
+                    <h3>blogs title goes here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, obcaecati?</p>
+                    <a href="order now" class="btn">read more</a>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="update">
+                    <p><i class="fas fa-calendar"></i> 21st septemper, 2022</p>
+                </div>
+                <div class="image">
+                    <img src="pngimages/pexels-valeria-boltneva-11480871.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="tags">
+                        <a href="#"><i class="fas fa-tag"></i> food / </a>
+                        <a href="#"><i class="fas fa-tag"></i>burger / </a>
+                        <a href="#"><i class="fas fa-tag"></i> pizza</a>
+                    </div>
+                    
+                    <h3>blogs title goes here...</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, obcaecati?</p>
+                    <div class="login-signup">                     
+                        <a href="campaigmDetail.html" class="">read more</a>
+                        <a href="pledge.html" class="">Make pledge</a>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
+    <footer>
+        <div class="container">
+            <div class="big-row">
+                <img class="logo-footer" src="assets/awareness-campaign.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem fuga, accusamus eum illum nostrum, cupiditate ad quae dolor modi recusandae aperiam error impedit dolores totam. Rem sit obcaecati quibusdam recusandae?</p>
+                <div class="icons-footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Find It Fast</h4>
+                <div class="links">
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Education</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Health</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Arts</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Films</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Education</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Qucik Links</h4>
+                <div class="links">
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Your Account</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> About Us</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Contact Us</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Campigans</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Pledges</a>
+                </div>
+            </div>
+            <div class="row">
+                <h4>Service Us</h4>
+                <div class="links">
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Support center</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Terms & condition</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href=""><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-footer">
+        <div class="conatiner">
+            <p> &#xA9; Created By <span> Eng. Mai Abdelsalam </span>| All Right Reserved</p>
+        </div>
+    </div>
+
+
+    <a href="createcampagin.html" class="create-campagin-icon" id="create"><i class="fa fa-plus"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

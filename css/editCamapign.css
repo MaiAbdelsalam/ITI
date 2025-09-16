@@ -1,0 +1,93 @@
+:root{
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #f12d2d;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+    --white-color:#fff;
+    --light-color:#ccc;
+    --background2-color:#EEEEEE;
+
+}
+.rewardContent {
+    text-align: left;
+    display: flex;
+    gap: 20px;
+}
+
+label{
+    text-align: left;
+    display: block;
+    color: red;
+}
+.rewardContent input{
+    flex: 1 1 40%;
+}
+.rewardContent .create-campagin-icon{
+    position: relative !important;
+    border-radius: 50%;
+    height: 3rem;
+    width:3rem;
+    line-height: 3rem !important;
+    background-color: var(--main-color);
+    text-align: center;
+    border: 1px solid transparent;
+}
+.rewardContent .create-campagin-icon:hover{
+    border: 1px solid var(--dark-color);
+
+    background-color: transparent;
+}
+.rewardContent .create-campagin-icon:hover i{
+    border: 1px solid var(--dark-color);
+    background-color: transparent;
+    color: var(--main-color);
+}
+.rewardContent .create-campagin-icon i{
+    font-size: 1rem;
+    
+}
+
+tr td i{
+    position: relative;
+    border-radius: 50%;
+    padding: 1rem 2rem;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+thead tr{
+    border-top: 1px solid var(--background2-color);
+    border-bottom: 1px solid var(--background2-color);
+}
+thead td{
+    font-weight: 700;
+}
+
+td{
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    color: #222;
+    height: 40px;
+}
+table td i{
+    color:var(--main-color) ;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+table td i.fa-trash{
+    color:red ;
+    font-size: 1.4rem;
+}
+table td i:hover{
+    transform: scale(1.1);
+    color:var(--main-color) ;
+    font-size: 1.4rem;
+}
+table td i.fa-trash:hover{
+    color:red ;
+    font-size: 1.4rem;
+}

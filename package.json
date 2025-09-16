@@ -1,0 +1,19 @@
+{
+  "name": "es6project",
+  "version": "1.0.0",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node db/server.js"
+  },
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0",
+    "sweetalert": "^2.1.2"
+  }
+}

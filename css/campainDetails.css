@@ -1,0 +1,124 @@
+.item-details{
+    text-align: center;
+    margin-top: 2rem;
+
+}
+:root{
+    --main-color: #fcb700;
+    --dark-color: #222222;
+    --parg-color: #666666;
+    --dark-red: #f12d2d;
+    --border-color: #6666662a;
+    --name-item: #0066c0;
+    --white-color:#fff;
+    --light-color:#ccc;
+    --background2-color:#EEEEEE;
+
+}
+.item-details .image-cart{
+    width: 40%;
+    height: 70vh;
+    margin: auto;
+    border: 1px solid#333;
+    padding: .2rem;
+}
+.item-details .image-cart img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+}
+.btn{
+    width: max-content;
+}
+
+select{
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+}
+/*  featured section start  css */
+.featured .row{
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .4rem;
+    background: #f9f9f9;
+    padding: 1.2rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.featured .row .image-container{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex: 1 1 30rem;
+}
+.featured .row .content{
+    flex: 1 1 33rem;
+}
+.featured .row .image-container .small-image{
+    width: 20%;
+    /* height: 20px; */
+}
+.featured .row .image-container .big-image{
+    width: 100%;
+    padding: .1rem;
+}
+button{
+    font-size: 1rem;
+}
+.featured .row .image-container .small-image img{
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.featured .row .image-container .small-image img:hover{
+    background: #ccc;
+
+}
+.featured .row .image-container .big-image img{
+    width: 100%;
+}
+.featured .row .image-container .big-image img:hover{
+    transform: scale(1.05);
+}
+
+.featured .row .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+
+.featured .row .content p{
+    font-size: 1rem;
+    color: #999;
+    padding: 1rem 0;
+}
+
+.featured .row .content .price{
+    font-size: 1.3rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+.featured{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+
+}
+
+.featured .row .content .price span{
+    font-size: 1rem;
+    color: var(--orange);
+    text-decoration: line-through;
+}
+
+
+
+
+/*  featured section end css */
