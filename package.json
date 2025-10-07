@@ -1,0 +1,22 @@
+{
+  "name": "7-10-2025",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "expres": "^0.0.5",
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.19.1"
+  }
+}
