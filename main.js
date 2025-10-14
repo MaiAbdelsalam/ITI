@@ -6,6 +6,8 @@ import usersRouter from './src/users/users.route.js';
 import dbConnection from './config/db.js';
 import postsRouter from './src/posts/posts.route.js';
 import { error } from 'console';
+import errorHandler from './src/middelwares/errorHandler.js'
+import limiter from './src/middelwares/rateLimiter.js'
 
 
 // const usersRouter = require("./routers/usersRouter");
@@ -21,6 +23,8 @@ app.use(express.urlencoded({ extended: true }));
 // app.use("/users", usersRouter);
 
 dbConnection()
+app.use(limiter);
+
 app.use('/users',usersRouter)
 app.use('/posts',postsRouter)
 app.all('/{*any}', (req, res) => {
@@ -29,6 +33,8 @@ app.all('/{*any}', (req, res) => {
       method: req.method
     });
   });
+
+  app.use(errorHandler)
 // const PORT = 5000;
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);

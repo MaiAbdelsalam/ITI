@@ -1,5 +1,6 @@
 import validatorMiddleware from "../middelwares/validator.middelware.js";
 import userSchema from "../users/user.schema.js";
+import CustomError from "../utils/customError.js";
 import postSchema from "./posts.schema.js";
 import { body,param } from "express-validator";
 
@@ -12,13 +13,13 @@ class PostsValidation{
         .isMongoId().withMessage('invalid user id')
         .custom(async(val,{req})=>{
             const user=await userSchema.findById(val)
-            if(!user) throw new Error('user not found')
+            if(!user) throw new CustomError('invalid user id',400)
             return true;
         }),
     validatorMiddleware]
 
     updateOne=[
-        param('id').isMongoId().withMessage('invalid user id'),
+        param('id').isMongoId().withMessage( new CustomError('invalid post id',400)),
         body('title').optional()
         .isLength({min:2,max:50}).withMessage('validation length short must between 2 to 50 char'),
         body('content').optional()
@@ -32,10 +33,10 @@ class PostsValidation{
         })
         ,validatorMiddleware]
 
-    getOne=[param('id').isMongoId().withMessage('invalid user id')
+    getOne=[param('id').isMongoId().withMessage( new CustomError('invalid post id',400))
         ,validatorMiddleware];
 
-    deleteOne=[param('id').isMongoId().withMessage('invalid user id')
+    deleteOne=[param('id').isMongoId().withMessage( new CustomError('invalid post id',400))
         ,validatorMiddleware]
 
 }
