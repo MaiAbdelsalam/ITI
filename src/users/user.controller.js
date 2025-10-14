@@ -1,5 +1,8 @@
+import CustomError from "../utils/customError.js";
 import usersSchema from "./user.schema.js";
 import asyncHandler  from 'express-async-handler';
+import {isValidObjectId}  from "mongoose";
+import bcrypt from "bcryptjs";
 
 class UserController{
     getAll=async(req,res,next)=>{
@@ -9,14 +12,16 @@ class UserController{
     }
     getOne=asyncHandler(async(req,res,next)=>{
         const users=await usersSchema.findById(req.params.id);
-        if(!users) return res.status(400).send({message:'user not found'})
+        if(!users) throw new CustomError('user not found',404)
         res.status(200).json({users:users});
     })
+
     createOne=asyncHandler(async(req,res)=>{
+        console.log(req.body);
         const users=await usersSchema.create({
             name:req.body.name ,
             email:req.body.email,
-            password:req.body.password
+            password:await bcrypt.hash(req.body.password,process.env.SALT_ROUND)
         });
         res.status(201).json({users:users});
     })
@@ -27,14 +32,14 @@ class UserController{
             password:req.body.password 
         },
         {new:true});
-        if(!users) return res.status(404).send({message:'error user not found'})
+        if(!users) throw new CustomError('user not found',404)
         res.status(200).json({users:users})
     })
 
 
     deleteOne=asyncHandler(async(req,res,next)=>{
         const users=await usersSchema.findByIdAndDelete(req.params.id);
-        if(!users) return res.status(404).send({message:`Data Not Found`})
+        if(!users) throw new CustomError('user not found',404)
         // const todos=await todoShcema.deleteMany({userId:users._id});
         res.status(204).json({users:users})
     })
