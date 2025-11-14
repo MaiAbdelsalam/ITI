@@ -1,0 +1,12 @@
+import Navbar from '@/components/Navbar.jsx'
+import React from 'react'
+
+function layout({children}) {
+  return (
+    <div>
+      <Navbar /> 
+      {children}
+    </div>
+  )
+}
+export default layout
